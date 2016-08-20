@@ -1,0 +1,35 @@
+<head>
+    <title>Yoda-say</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    {{> form}}
+
+    {{> yoda}}
+</body>
+
+<template name="form">
+    <section class="form">
+        <textarea placeholder="Скажи слова великие" tabindex="1" class="js-text form__control">{{text}}</textarea>
+        <br>
+        <button type="submit" class="form__submit">Скажи Ёда!</button>
+        <img class="form__arrow" src="/arrow.svg" alt="arrow">
+    </section>
+</template>
+<template name="yoda">
+    <section class="yoda">
+        <img class="yoda__picture" src="/yoda.svg" alt="yoda">
+
+        {{#if yodaSay}}
+            <blockquote class="yoda__say">
+                <div class="yoda_limiter">
+                    <p class="yoda__text">{{yodaSay}}</p>
+                </div>
+            </blockquote>
+        {{/if}}
+    </section>
+</template>
+
+
+

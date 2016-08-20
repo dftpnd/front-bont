@@ -1,0 +1,74 @@
+.form
+{
+    display: table;
+    margin-bottom: -150px;
+    position: relative;
+}
+
+.form__control
+{
+    width: 300px;
+    min-height: 100px;
+}
+
+.form__submit
+{
+    float: right;
+}
+.form__arrow{
+    width: 150px;
+    position: absolute;
+    bottom: -120px;
+    left: -30px;
+    transform: rotate(40deg)
+}
+.yoda
+{
+    overflow: hidden;
+}
+
+.yoda:before,
+.yoda:after
+{
+    content: '';
+    clear: both;
+    float: none;
+}
+
+.yoda__picture
+{
+    float: left;
+    width: 300px;
+    margin-top: 200px;
+}
+
+.yoda__say
+{
+    overflow: hidden;
+    background: url(/cloud.svg) no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.yoda_limiter
+{
+    padding: 126px 88px 0 65px;
+}
+.yoda__text{
+    display: flex;
+    height: 130px;
+    overflow-y: auto;
+    align-items: center;
+
+}
+.yoda__text:first-letter {
+    text-transform: uppercase;
+    color: red;
+}
+
+.yoda__text:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: red; /* Красный цвет текста */
+}
